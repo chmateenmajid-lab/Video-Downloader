@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VideoGrab AI — Video Downloader</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <nav><div class="logo"><span>▶</span> VideoGrab <b>AI</b></div><span class="pill">BETA</span></nav>
+    <section class="hero">
+      <div class="eyebrow">SIMPLE · FAST · RESPONSIVE</div>
+      <h1>Save videos.<br><em>Your way.</em></h1>
+      <p>Paste a link from an enabled website to check available video formats.</p>
+      <div class="panel">
+        <label for="url">VIDEO LINK</label>
+        <div class="urlrow">
+          <input id="url" type="url" placeholder="https://www.instagram.com/reel/…" autocomplete="url">
+          <button id="analyze">Analyze link <span>↗</span></button>
+        </div>
+        <div class="hint">Only public or otherwise authorized content from enabled sources.</div>
+        <div id="status" role="status"></div>
+        <div id="result" class="result hidden">
+          <div class="preview"><img id="thumb" alt=""><div><strong id="title"></strong><small id="duration"></small></div></div>
+          <label for="quality">AVAILABLE QUALITY</label>
+          <select id="quality"></select>
+          <button id="download" class="download">Download video ↓</button>
+        </div>
+      </div>
+      <div class="features">
+        <div><b>01</b><strong>Paste a link</strong><small>From an enabled source</small></div>
+        <div><b>02</b><strong>Choose quality</strong><small>See available formats</small></div>
+        <div><b>03</b><strong>Save locally</strong><small>Download to your device</small></div>
+      </div>
+    </section>
+    <footer>VideoGrab AI · Use only where you have permission to download.</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body></html>
